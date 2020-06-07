@@ -1,0 +1,11 @@
+function matchingParens(str) {
+  let stack = [];
+  for(let i = 0; i < str.length; i++) {
+    if(str[i] === '(' || ')') {
+      stack.push(str[i]);
+    }
+  }
+  return stack;
+} 
+
+matchingParens('(jebcjfj)');
