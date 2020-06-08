@@ -27,4 +27,23 @@ function checkOpenCloseParens(str) {
   }
 }
 
+function parensPairs(str) {
+  if(typeof str !== 'string') {
+    alert('invalid input type: alphanumeric strings only!')
+  }
+  //let stack = [];
+  const count = 0;
+  for(let i = 0; i < str.length; i++) {
+    if(str[i] === '(') {
+      count++;
+    } else if(str[i] === ')') {
+      count--;
+    }
+  }
+  if(count < 0 || count <= -1) {
+    return false;
+  }
+  return true;
+}
+
 console.log(checkOpenCloseParens('((hevdhueb)hebxh)'));
